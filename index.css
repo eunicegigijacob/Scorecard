@@ -1,9 +1,72 @@
 body {
     margin: 0;
+    width: 575px;
+    height: 385px;
+    margin:  auto;
+}
+
+@font-face {
+    font-family: Cursed Timer ULiL;
+    src: url(CursedTimerULiL.ttf);
 }
 
 .container {
     display: flex;
     justify-content: space-around;
-    
+    background: linear-gradient(#1F2937, #4B5563);
 }
+
+.board-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    margin: 70px 0px 21px 0px;
+}
+
+.own-score{
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    border-radius: 5px;
+}
+
+.own-score > p {
+    margin-top: 0;
+    font-family: Cursed Timer ULiL;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+    color: #F94F6D;
+}
+
+/* .add-pointsbtn button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+} */
+
+.btn {
+    margin: 26px 2px;
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #9AABD8;
+    background: #1F2937;
+
+}
+
