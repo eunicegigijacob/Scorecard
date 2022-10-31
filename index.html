@@ -1,32 +1,38 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="maincontainer">
         <div class="container">
             <div>
                 <h3 class="board-title">HOME</h3>
                 <div class="own-score">
-                    <p class="score-points">0</p>
+                    <p class="score-points" id="home_points"></p>
                 </div>
                 <div class="add-pointsbtn">
-                    <button class="btn btn1">+1</button>
-                    <button class="btn btn2">+2</button>
-                    <button class="btn btn3">+3</button>
+                    <button class="btn" onclick="add1('home_points')">+1</button>
+                    <button class="btn" onclick="add2('home_points')">+2</button>
+                    <button class="btn" onclick="add3('home_points')">+3</button>
                 </div>
             </div>
             <div>
                 <h3 class="board-title">GUEST</h3>
                 <div class="own-score">
-                    <p class="score-points">0</p>
+                    <p class="score-points" id="guest_points"></p>
                 </div>
                 <div class="add-pointsbtn">
-                    <button class="btn btn1">+1</button>
-                    <button class="btn btn2">+2</button>
-                    <button class="btn btn3">+3</button>
+                    <button class="btn" onclick="add1('guest_points')">+1</button>
+                    <button class="btn" onclick="add2('guest_points')">+2</button>
+                    <button class="btn" onclick="add3('guest_points')">+3</button>
                 </div>
             </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
