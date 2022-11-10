@@ -1,12 +1,8 @@
 body {
     margin: 0;
+    background: linear-gradient(#1F2937, #4B5563);
 }
 
-.maincontainer{
-    width: 575px;
-    height: 385px;
-    margin: 0 auto;
-}
 
 @font-face {
     font-family: Cursed Timer ULiL;
@@ -16,7 +12,18 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(#1F2937, #4B5563);
+    /* background: linear-gradient(#1F2937, #4B5563); */
+    width: 575px;
+    height: 385px;
+    margin: 0 auto;
+}
+
+.maincontainer h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #EEEEEE;
+    text-shadow: 3px 3px 2px  #5175a6;
 }
 
 .board-title{
@@ -74,3 +81,11 @@ body {
 
 }
 
+.resetbtn {
+    background-color: #e71212;
+    margin: 5px 10px 0 auto;
+    padding: 10px 20px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+}

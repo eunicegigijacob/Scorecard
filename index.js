@@ -46,3 +46,11 @@ function add3(points) {
 
     }
 }
+
+
+document.getElementById('resetBtn').addEventListener('click', ()=>{
+    guestPoints = 0;
+    homePoints = 0;
+    homePointsElement.textContent = homePoints;
+    guestPointsElement.textContent = guestPoints;
+});
